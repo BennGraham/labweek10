@@ -1,13 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h4 {
+    font-size: 2.25rem;
+    margin: 0.5rem;
+    padding: 0;
+}
+
+input,
+select,
+option {
+    width: 100%;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.form-section {
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.75rem;
+    background-color: #e9e9e920;
+    padding: 1rem;
+    border: 1px solid #e9e9e9;
+    width: 1200px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: start;
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+.form-label {
+    font-size: 1.25rem;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.user-data-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+.user-data-container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.user-data-container > div:first-child {
+    text-align: right;
+}
+
+.user-data-container > div:last-child {
+    text-align: left;
+}
+
+.user-data-container span {
+    padding: 4px 0.5rem;
+}
+
+.user-data-container span:nth-child(2n + 1) {
+    background: #e9e9e920;
+}
+
+button {
+    background: green;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 1rem;
 }
