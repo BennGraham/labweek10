@@ -1,7 +1,6 @@
 import FormSection from "./FormSection";
 
 export default function SubmittedData({ formData }) {
-  console.log("form data", formData);
   return (
     <FormSection className="submitted-data">
       <h4>Submitted Data</h4>

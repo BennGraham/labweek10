@@ -22,7 +22,6 @@ export default function DataForm() {
   });
 
   const onSubmit = (data) => {
-    console.log("data", data);
     setUserData(data);
   };
 
